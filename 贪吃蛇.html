@@ -52,7 +52,6 @@
     </div>
     <script>
       var main = document.querySelector(".main");
-      var body = document.querySelector("body");
       // 数组 用来存放蛇身
       var arr = [
         { top: 0, left: 0 },
@@ -152,7 +151,7 @@
       document.addEventListener("keyup", function (e) {
         xuanran();
         document.addEventListener("keydown", function (e) {
-          move(body, e.keyCode);
+          move(main, e.keyCode);
         });
       });
     </script>
